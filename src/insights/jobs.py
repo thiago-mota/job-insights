@@ -7,10 +7,10 @@ import csv
 def read(path: str) -> List[Dict]:
     with open(path, mode="r") as file:
         csv_file = csv.DictReader(file)
-        dict_list = []
-        for dict in csv_file:
-            dict_list.append(dict)
-    return(dict_list)
+        jobs = []
+        for job_data in csv_file:
+            jobs.append(job_data)
+    return(jobs)
 
 
 def get_unique_job_types(path: str) -> List[str]:
