@@ -3,11 +3,11 @@ from src.insights.jobs import read
 
 
 def get_unique_industries(path: str) -> List[str]:
-    jobs = read(path)
+    data = read(path)
     industries = set()
-    for industry in jobs:
-        if industry["industry"] != "":
-            industries.add(industry["industry"])
+    for jobs in data:
+        if jobs["industry"] != "":
+            industries.add(jobs["industry"])
     return industries
 
 
