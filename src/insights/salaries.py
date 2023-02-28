@@ -36,12 +36,10 @@ def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
         raise ValueError('Precisa ser um interger')
 
 
-
 def filter_by_salary_range(
     jobs: List[dict],
     salary: Union[str, int]
 ) -> List[Dict]:
-    
     jobs_on_salary_range = []
 
     for job in jobs:

@@ -10,7 +10,7 @@ def read(path: str) -> List[Dict]:
         jobs = []
         for job_data in csv_file:
             jobs.append(job_data)
-    return(jobs)
+    return jobs
 
 
 def get_unique_job_types(path: str) -> List[str]:
